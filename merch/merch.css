@@ -1,21 +1,28 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    color: rgb(255, 236, 236);
+}
 
 .card {
-	width: 200px;
-	display: inline-block;
-	margin: 1rem;
-	border-radius: 4px;
-	box-shadow: 0 -1px 1px 0 rgba(0,0,0,.05), 0 1px 2px 0 rgba(0,0,0,.2);
-	transition: all .2s ease;
-	background: #fff;
-	position: relative;
-	overflow: hidden;
+    width: 200px;
+    display: inline-block;
+    margin: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, .05), 0 1px 2px 0 rgba(0, 0, 0, .2);
+    transition: all .2s ease;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
 }
-	
-	
+
+
 .card-img {
     position: relative;
     height: 224px;
@@ -26,6 +33,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .card-img .overlay {
     position: absolute;
     left: 0;
@@ -35,17 +43,19 @@
     background-color: #fff;
     opacity: 0;
 }
+
 .card-img .overlay-content {
     line-height: 224px;
     width: 100%;
     text-align: center;
     color: #fff;
 }
+
 .card-img .overlay-content a {
     color: #fff;
     padding: 0 2rem;
     display: inline-block;
-    border: 1px solid rgba(255,255,255,.4);
+    border: 1px solid rgba(255, 255, 255, .4);
     height: 40px;
     line-height: 40px;
     border-radius: 20px;
@@ -53,7 +63,7 @@
     text-decoration: none;
 }
 
-        
+
 
 .card-content {
     width: 100%;
@@ -64,18 +74,21 @@
     border-bottom-left-radius: 4px;
     padding: 1rem 2rem;
     transition: all .2s ease;
-}		
+}
+
 .card-content .a {
     text-decoration: none;
     color: #202927;
 }
-		
-.card-content h2, a h2 {
+
+.card-content h2,
+a h2 {
     font-size: 1rem;
     font-weight: 500;
 }
 
-.card-content p, a p {
+.card-content p,
+a p {
     font-size: .8rem;
     font-weight: 400;
     white-space: nowrap;
@@ -83,20 +96,22 @@
     text-overflow: ellipsis;
     color: rgba(32, 41, 28, .8);
 }
-	
 
 
-.card:hover, .hover {
+
+.card:hover,
+.hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 25px 0 rgba(0,0,0,.3), 0 0 1px 0 rgba(0,0,0,.25);
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, .3), 0 0 1px 0 rgba(0, 0, 0, .25);
 }
+
 .card .card-content {
     box-shadow: inset 0 3px 0 0 #ccb65e;
     border-color: #ccb65e;
 }
-    
+
 .card .card-img .overlay {
-    background-color: rgba(25,29,38,.85);
+    background-color: rgba(25, 29, 38, .85);
     transition: opacity .2s ease;
     opacity: 1;
 }
